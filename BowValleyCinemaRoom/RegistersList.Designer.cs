@@ -28,140 +28,164 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgRegisters = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textFilter = new System.Windows.Forms.TextBox();
-            this.btnClean = new System.Windows.Forms.Button();
-            this.btnEdit = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.radioId = new System.Windows.Forms.RadioButton();
-            this.radioFirstName = new System.Windows.Forms.RadioButton();
-            this.radioLastName = new System.Windows.Forms.RadioButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dgRegisters)).BeginInit();
-            this.SuspendLayout();
+            dgRegisters = new DataGridView();
+            label1 = new Label();
+            textFilter = new TextBox();
+            btnClean = new Button();
+            btnEdit = new Button();
+            btnDelete = new Button();
+            label2 = new Label();
+            radioId = new RadioButton();
+            radioFirstName = new RadioButton();
+            radioLastName = new RadioButton();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)dgRegisters).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // dgRegisters
             // 
-            this.dgRegisters.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgRegisters.Location = new System.Drawing.Point(12, 78);
-            this.dgRegisters.Name = "dgRegisters";
-            this.dgRegisters.RowTemplate.Height = 25;
-            this.dgRegisters.Size = new System.Drawing.Size(776, 360);
-            this.dgRegisters.TabIndex = 0;
-            this.dgRegisters.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgRegisters_CellContentClick);
-            this.dgRegisters.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgRegisters_CellContentClick);
+            dgRegisters.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgRegisters.Location = new Point(17, 130);
+            dgRegisters.Margin = new Padding(4, 5, 4, 5);
+            dgRegisters.Name = "dgRegisters";
+            dgRegisters.RowHeadersWidth = 62;
+            dgRegisters.RowTemplate.Height = 25;
+            dgRegisters.Size = new Size(1109, 600);
+            dgRegisters.TabIndex = 0;
+            dgRegisters.CellClick += dgRegisters_CellContentClick;
+            dgRegisters.CellContentClick += dgRegisters_CellContentClick;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 46);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 15);
-            this.label1.TabIndex = 1;
+            label1.AutoSize = true;
+            label1.Location = new Point(17, 77);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(0, 25);
+            label1.TabIndex = 1;
             // 
             // textFilter
             // 
-            this.textFilter.Location = new System.Drawing.Point(12, 43);
-            this.textFilter.Name = "textFilter";
-            this.textFilter.Size = new System.Drawing.Size(209, 23);
-            this.textFilter.TabIndex = 2;
-            this.textFilter.TextChanged += new System.EventHandler(this.filter);
+            textFilter.Location = new Point(17, 72);
+            textFilter.Margin = new Padding(4, 5, 4, 5);
+            textFilter.Name = "textFilter";
+            textFilter.Size = new Size(297, 31);
+            textFilter.TabIndex = 2;
+            textFilter.TextChanged += filter;
             // 
             // btnClean
             // 
-            this.btnClean.Location = new System.Drawing.Point(239, 43);
-            this.btnClean.Name = "btnClean";
-            this.btnClean.Size = new System.Drawing.Size(75, 23);
-            this.btnClean.TabIndex = 4;
-            this.btnClean.Text = "Clean";
-            this.btnClean.UseVisualStyleBackColor = true;
-            this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
+            btnClean.Location = new Point(341, 72);
+            btnClean.Margin = new Padding(4, 5, 4, 5);
+            btnClean.Name = "btnClean";
+            btnClean.Size = new Size(107, 38);
+            btnClean.TabIndex = 4;
+            btnClean.Text = "Clean";
+            btnClean.UseVisualStyleBackColor = true;
+            btnClean.Click += btnClean_Click;
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(632, 46);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(75, 23);
-            this.btnEdit.TabIndex = 5;
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.UseVisualStyleBackColor = true;
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            btnEdit.Location = new Point(903, 77);
+            btnEdit.Margin = new Padding(4, 5, 4, 5);
+            btnEdit.Name = "btnEdit";
+            btnEdit.Size = new Size(107, 38);
+            btnEdit.TabIndex = 5;
+            btnEdit.Text = "Edit";
+            btnEdit.UseVisualStyleBackColor = true;
+            btnEdit.Click += btnEdit_Click;
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(713, 46);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
-            this.btnDelete.TabIndex = 6;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            btnDelete.Location = new Point(1019, 77);
+            btnDelete.Margin = new Padding(4, 5, 4, 5);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(107, 38);
+            btnDelete.TabIndex = 6;
+            btnDelete.Text = "Delete";
+            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 18);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 15);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Search by: ";
+            label2.AutoSize = true;
+            label2.Location = new Point(17, 30);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(98, 25);
+            label2.TabIndex = 7;
+            label2.Text = "Search by: ";
             // 
             // radioId
             // 
-            this.radioId.AutoSize = true;
-            this.radioId.Location = new System.Drawing.Point(92, 17);
-            this.radioId.Name = "radioId";
-            this.radioId.Size = new System.Drawing.Size(35, 19);
-            this.radioId.TabIndex = 8;
-            this.radioId.TabStop = true;
-            this.radioId.Text = "Id";
-            this.radioId.UseVisualStyleBackColor = true;
+            radioId.AutoSize = true;
+            radioId.Location = new Point(131, 28);
+            radioId.Margin = new Padding(4, 5, 4, 5);
+            radioId.Name = "radioId";
+            radioId.Size = new Size(53, 29);
+            radioId.TabIndex = 8;
+            radioId.TabStop = true;
+            radioId.Text = "Id";
+            radioId.UseVisualStyleBackColor = true;
             // 
             // radioFirstName
             // 
-            this.radioFirstName.AutoSize = true;
-            this.radioFirstName.Location = new System.Drawing.Point(145, 17);
-            this.radioFirstName.Name = "radioFirstName";
-            this.radioFirstName.Size = new System.Drawing.Size(79, 19);
-            this.radioFirstName.TabIndex = 9;
-            this.radioFirstName.TabStop = true;
-            this.radioFirstName.Text = "FirstName";
-            this.radioFirstName.UseVisualStyleBackColor = true;
+            radioFirstName.AutoSize = true;
+            radioFirstName.Location = new Point(207, 28);
+            radioFirstName.Margin = new Padding(4, 5, 4, 5);
+            radioFirstName.Name = "radioFirstName";
+            radioFirstName.Size = new Size(117, 29);
+            radioFirstName.TabIndex = 9;
+            radioFirstName.TabStop = true;
+            radioFirstName.Text = "FirstName";
+            radioFirstName.UseVisualStyleBackColor = true;
             // 
             // radioLastName
             // 
-            this.radioLastName.AutoSize = true;
-            this.radioLastName.Location = new System.Drawing.Point(239, 18);
-            this.radioLastName.Name = "radioLastName";
-            this.radioLastName.Size = new System.Drawing.Size(78, 19);
-            this.radioLastName.TabIndex = 10;
-            this.radioLastName.TabStop = true;
-            this.radioLastName.Text = "LastName";
-            this.radioLastName.UseVisualStyleBackColor = true;
+            radioLastName.AutoSize = true;
+            radioLastName.Location = new Point(341, 30);
+            radioLastName.Margin = new Padding(4, 5, 4, 5);
+            radioLastName.Name = "radioLastName";
+            radioLastName.Size = new Size(115, 29);
+            radioLastName.TabIndex = 10;
+            radioLastName.TabStop = true;
+            radioLastName.Text = "LastName";
+            radioLastName.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(519, 21);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(137, 101);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 11;
+            pictureBox1.TabStop = false;
             // 
             // RegistersList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.radioLastName);
-            this.Controls.Add(this.radioFirstName);
-            this.Controls.Add(this.radioId);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.btnClean);
-            this.Controls.Add(this.textFilter);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dgRegisters);
-            this.Name = "RegistersList";
-            this.Text = "Registers List";
-            this.Load += new System.EventHandler(this.RegistersList_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgRegisters)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1143, 750);
+            Controls.Add(pictureBox1);
+            Controls.Add(radioLastName);
+            Controls.Add(radioFirstName);
+            Controls.Add(radioId);
+            Controls.Add(label2);
+            Controls.Add(btnDelete);
+            Controls.Add(btnEdit);
+            Controls.Add(btnClean);
+            Controls.Add(textFilter);
+            Controls.Add(label1);
+            Controls.Add(dgRegisters);
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "RegistersList";
+            Text = "Registers List";
+            Load += RegistersList_Load;
+            ((System.ComponentModel.ISupportInitialize)dgRegisters).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -176,5 +200,6 @@
         private RadioButton radioId;
         private RadioButton radioFirstName;
         private RadioButton radioLastName;
+        private PictureBox pictureBox1;
     }
 }
