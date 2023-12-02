@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -23,8 +24,82 @@ namespace BowValleyCinemaRoom
             radioId.Checked = true;
             RegisterQueries registerQueries = new RegisterQueries();
             dgRegisters.DataSource = registerQueries.GetRegisters();
-            
+
+            //Get user ID
+            int personId = Convert.ToInt32(dgRegisters.Rows[0].Cells["RegisterID"].Value);
+
+            SetImageByPersonId(personId);
+
         }
+
+        //Apply images to users by Id
+
+        private void SetImageByPersonId(int personId) {
+            if (personId == 1)
+            {
+                pictureBox1.Image = Properties.Resources.TomCruise;
+            }
+            else if (personId == 2)
+            {
+
+                pictureBox1.Image = Properties.Resources.Javier_Bardem;
+
+            }
+            else if (personId == 3) {
+
+
+                pictureBox1.Image = Properties.Resources.LeonardoDicaprio;
+
+
+
+            }
+            else if (personId == 4)
+            {
+
+
+                pictureBox1.Image = Properties.Resources.BradPitt;
+
+
+
+            }
+            else if (personId == 10)
+            {
+
+
+                pictureBox1.Image = Properties.Resources.NicoleKidman;
+
+
+
+            }
+            else if (personId == 6)
+            {
+
+
+                pictureBox1.Image = Properties.Resources.AnthonyHopkins;
+
+
+
+            }
+            else if (personId == 11)
+            {
+
+
+                pictureBox1.Image = Properties.Resources.LaurenceFishburne;
+
+
+
+            }
+
+
+            else
+            {
+                pictureBox1.Image = null; 
+            }
+
+        }
+
+
+
 
         private void btnClean_Click(object sender, EventArgs e)
         {
@@ -54,10 +129,13 @@ namespace BowValleyCinemaRoom
         {
             if (e.RowIndex >= 0) {
                 DataGridViewRow row = this.dgRegisters.Rows[e.RowIndex];
+                //
+                int personId = Convert.ToInt32(row.Cells["RegisterID"].Value);
 
                 if (radioId.Checked == true)
                 {
                     textFilter.Text = row.Cells["RegisterID"].Value.ToString();
+                   
                 }
                 else if (radioFirstName.Checked == true)
                 {
@@ -67,8 +145,15 @@ namespace BowValleyCinemaRoom
                 {
                     textFilter.Text = row.Cells["LastName"].Value.ToString();
                 }
+                SetImageByPersonId(personId);
+
+
+
             }
+
+
         }
+       
 
         private void btnEdit_Click(object sender, EventArgs e)
         {

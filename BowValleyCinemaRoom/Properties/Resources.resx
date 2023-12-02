@@ -118,10 +118,43 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AnthonyHopkins" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AnthonyHopkins.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BradPitt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BradPitt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Javier_Bardem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Javier_Bardem.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Katie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Katie.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LaurenceFishburne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LaurenceFishburne.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LeonardoDicaprio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LeonardoDicaprio.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="logo-bowcinema" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo-bowcinema.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="LucyLiu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LucyLiu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MadsMikkelsen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MadsMikkelsen.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MicrosoftTeams-image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MicrosoftTeams-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NicoleKidman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NicoleKidman.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PenélopeCruz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PenélopeCruz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TomCruise" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TomCruise.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

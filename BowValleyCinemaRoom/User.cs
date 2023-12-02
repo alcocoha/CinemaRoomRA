@@ -41,5 +41,10 @@ namespace BowValleyCinemaRoom
             UpdateRegister updateMovie = new UpdateRegister(RegisterID);
             updateMovie.Show();
         }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult rs = MessageBox.Show("Welcome to BowValleyCinemaRoom, your premier destination for all things cinematic! Immerse yourself in a world of entertainment as we bring you a carefully curated selection of movies, TV shows, and film-inspired merchandise. Whether you're a film buff, a casual viewer, or looking for the perfect gift, BowValleyCinemaRoom is your go-to source for an unparalleled cinematic experience", "About us", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
