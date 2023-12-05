@@ -26,8 +26,9 @@ namespace BowValleyCinemaRoom
 
         private void btnRegisterMovie_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("FOFOOF");
             //AddMovie(string title, string category, string description, string year, int totalCopies, int price)
-            playSound();
+            //playSound();
 
             try
             {
@@ -45,12 +46,14 @@ namespace BowValleyCinemaRoom
             string year = textYear.Text;
             int totalCopies = Int32.Parse(textCopiesInStore.Text);
             int price = Int32.Parse(textPrice.Text);
+            string poster = textPoster.Text;
+            string trailer = textTrailer.Text;
 
             MovieQueries movieQueries = new MovieQueries();
 
 
 
-            var data = movieQueries.AddMovie(title, category, description, year, totalCopies, price);
+            var data = movieQueries.AddMovie(title, category, description, year, totalCopies, price, poster, trailer);
 
             MessageBox.Show(data.Item2);
 
@@ -62,6 +65,8 @@ namespace BowValleyCinemaRoom
                 textYear.Clear();
                 textCopiesInStore.Clear();
                 textPrice.Clear();
+                textPoster.Clear();
+                textTrailer.Clear();
             }
         }
         private void validateFields()
@@ -89,6 +94,14 @@ namespace BowValleyCinemaRoom
             if (textPrice.Text == "")
             {
                 throw new ErrorHandler.EmptyFieldException("Price");
+            }
+            if (textPoster.Text == "")
+            {
+                throw new ErrorHandler.EmptyFieldException("Poster");
+            }
+            if (textTrailer.Text == "")
+            {
+                throw new ErrorHandler.EmptyFieldException("Trailer");
             }
         }
 

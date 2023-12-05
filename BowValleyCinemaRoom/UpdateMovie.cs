@@ -44,10 +44,12 @@ namespace BowValleyCinemaRoom
             string year = textYear.Text;
             int totalCopies = Int32.Parse(textCopiesInStore.Text);
             int price = Int32.Parse(textPrice.Text);
+            string poster = textPoster.Text;
+            string trailer = textTrailer.Text;
 
             MovieQueries movieQueries = new MovieQueries();
             //MessageBox.Show(MovieID.ToString() + " " + title + " " + category + " \"" + description + "\" " + year + " " + totalCopies.ToString() + " " + price.ToString());
-            var data = movieQueries.UpdateMovie(MovieID, title, category, description, year, totalCopies, price);
+            var data = movieQueries.UpdateMovie(MovieID, title, category, description, year, totalCopies, price, poster, trailer);
             MessageBox.Show(data.Item2);
             if (data.Item1 == "success" ) Close();
         }

@@ -14,7 +14,7 @@ namespace BowValleyCinemaRoom
     {
         private DBConnection dbConnection = new DBConnection();
 
-        public (string, string) AddMovie(string title, string category, string description, string year, int totalCopies, int price)
+        public (string, string) AddMovie(string title, string category, string description, string year, int totalCopies, int price, string poster, string trailer)
         {
             using (SqlConnection connection = new SqlConnection(dbConnection.GetConnectionString()))
             {
@@ -32,6 +32,8 @@ namespace BowValleyCinemaRoom
                     cmd.Parameters.AddWithValue("@Year", year);
                     cmd.Parameters.AddWithValue("@TotalCopies", totalCopies);
                     cmd.Parameters.AddWithValue("@Price", price);
+                    cmd.Parameters.AddWithValue("@Poster", poster);
+                    cmd.Parameters.AddWithValue("@Trailer", trailer);
 
                     var result = cmd.ExecuteNonQuery();
 
@@ -108,7 +110,7 @@ namespace BowValleyCinemaRoom
             }
         }
 
-        public (string, string) UpdateMovie(int id, string title, string category, string description, string year, int totalCopies, int price)
+        public (string, string) UpdateMovie(int id, string title, string category, string description, string year, int totalCopies, int price, string poster, string trailer)
         {
             using (SqlConnection connection = new SqlConnection(dbConnection.GetConnectionString()))
             {
@@ -126,8 +128,10 @@ namespace BowValleyCinemaRoom
                     cmd.Parameters.AddWithValue("@Year", year);
                     cmd.Parameters.AddWithValue("@TotalCopies", totalCopies);
                     cmd.Parameters.AddWithValue("@Price", price);
+                    cmd.Parameters.AddWithValue("@Poster", poster);
+                    cmd.Parameters.AddWithValue("@Trailer", trailer);
 
-                    
+
                     var result = cmd.ExecuteNonQuery();
 
                     if (result == -1)
