@@ -38,17 +38,21 @@ namespace BowValleyCinemaRoom
             if (personId == 1)
             {
                 pictureBox1.Image = Properties.Resources.TomCruise;
+                //image source:https://en.wikipedia.org/wiki/Tom_Cruise
             }
             else if (personId == 2)
             {
 
                 pictureBox1.Image = Properties.Resources.Javier_Bardem;
+                //image source:https://en.wikipedia.org/wiki/Javier_Bardem
 
             }
             else if (personId == 3) {
 
 
                 pictureBox1.Image = Properties.Resources.LeonardoDicaprio;
+
+                //image source:https://en.wikipedia.org/wiki/Leonardo_DiCaprio
 
 
 
@@ -59,6 +63,8 @@ namespace BowValleyCinemaRoom
 
                 pictureBox1.Image = Properties.Resources.BradPitt;
 
+                //image source:https://en.wikipedia.org/wiki/Brad_Pitt
+
 
 
             }
@@ -67,7 +73,7 @@ namespace BowValleyCinemaRoom
 
 
                 pictureBox1.Image = Properties.Resources.NicoleKidman;
-
+                //image source:https://en.wikipedia.org/wiki/Nicole_Kidman
 
 
             }
@@ -77,7 +83,7 @@ namespace BowValleyCinemaRoom
 
                 pictureBox1.Image = Properties.Resources.AnthonyHopkins;
 
-
+                //image source:https://en.wikipedia.org/wiki/Anthony_Hopkins
 
             }
             else if (personId == 11)
@@ -85,15 +91,25 @@ namespace BowValleyCinemaRoom
 
 
                 pictureBox1.Image = Properties.Resources.LaurenceFishburne;
-
+                //image source:https://en.wikipedia.org/wiki/Laurence_Fishburne
 
 
             }
+            //else if (personId == 12)
+            //{
+
+
+               // pictureBox1.Image = Properties.Resources.LucyLiu;
+                //image source:https://en.wikipedia.org/wiki/Lucy_Liu
+
+
+           // }
 
 
             else
             {
-                pictureBox1.Image = null; 
+                pictureBox1.Image = Properties.Resources.Katie;
+                //image source:https://en.wikipedia.org/wiki/Katie_Holmes
             }
 
         }
