@@ -28,91 +28,91 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.moviesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.createMovieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.seeMoviesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openScreenAddNewAdmin = new System.Windows.Forms.ToolStripMenuItem();
-            this.seeUserRegistersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
-            this.SuspendLayout();
+            menuStrip1 = new MenuStrip();
+            moviesToolStripMenuItem = new ToolStripMenuItem();
+            createMovieToolStripMenuItem = new ToolStripMenuItem();
+            seeMoviesToolStripMenuItem = new ToolStripMenuItem();
+            usersToolStripMenuItem = new ToolStripMenuItem();
+            openScreenAddNewAdmin = new ToolStripMenuItem();
+            seeUserRegistersToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
+            SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.moviesToolStripMenuItem,
-            this.usersToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(590, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { moviesToolStripMenuItem, usersToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Padding = new Padding(8, 3, 0, 3);
+            menuStrip1.Size = new Size(758, 30);
+            menuStrip1.TabIndex = 1;
+            menuStrip1.Text = "menuStrip1";
             // 
             // moviesToolStripMenuItem
             // 
-            this.moviesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.createMovieToolStripMenuItem,
-            this.seeMoviesToolStripMenuItem});
-            this.moviesToolStripMenuItem.Name = "moviesToolStripMenuItem";
-            this.moviesToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
-            this.moviesToolStripMenuItem.Text = "Movies";
-            this.moviesToolStripMenuItem.Click += new System.EventHandler(this.moviesToolStripMenuItem_Click);
+            moviesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { createMovieToolStripMenuItem, seeMoviesToolStripMenuItem });
+            moviesToolStripMenuItem.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            moviesToolStripMenuItem.Name = "moviesToolStripMenuItem";
+            moviesToolStripMenuItem.Size = new Size(77, 24);
+            moviesToolStripMenuItem.Text = "Movies";
+            moviesToolStripMenuItem.Click += moviesToolStripMenuItem_Click;
             // 
             // createMovieToolStripMenuItem
             // 
-            this.createMovieToolStripMenuItem.Name = "createMovieToolStripMenuItem";
-            this.createMovieToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.createMovieToolStripMenuItem.Text = "Add New Movie";
-            this.createMovieToolStripMenuItem.Click += new System.EventHandler(this.createMovieToolStripMenuItem_Click);
+            createMovieToolStripMenuItem.Name = "createMovieToolStripMenuItem";
+            createMovieToolStripMenuItem.Size = new Size(224, 26);
+            createMovieToolStripMenuItem.Text = "Add New Movie";
+            createMovieToolStripMenuItem.Click += createMovieToolStripMenuItem_Click;
             // 
             // seeMoviesToolStripMenuItem
             // 
-            this.seeMoviesToolStripMenuItem.Name = "seeMoviesToolStripMenuItem";
-            this.seeMoviesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.seeMoviesToolStripMenuItem.Text = "See Movies";
-            this.seeMoviesToolStripMenuItem.Click += new System.EventHandler(this.seeMoviesToolStripMenuItem_Click);
+            seeMoviesToolStripMenuItem.Name = "seeMoviesToolStripMenuItem";
+            seeMoviesToolStripMenuItem.Size = new Size(224, 26);
+            seeMoviesToolStripMenuItem.Text = "See Movies";
+            seeMoviesToolStripMenuItem.Click += seeMoviesToolStripMenuItem_Click;
             // 
             // usersToolStripMenuItem
             // 
-            this.usersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.openScreenAddNewAdmin,
-            this.seeUserRegistersToolStripMenuItem});
-            this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
-            this.usersToolStripMenuItem.Text = "Users";
+            usersToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { openScreenAddNewAdmin, seeUserRegistersToolStripMenuItem });
+            usersToolStripMenuItem.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            usersToolStripMenuItem.Name = "usersToolStripMenuItem";
+            usersToolStripMenuItem.Size = new Size(61, 24);
+            usersToolStripMenuItem.Text = "Users";
             // 
             // openScreenAddNewAdmin
             // 
-            this.openScreenAddNewAdmin.Name = "openScreenAddNewAdmin";
-            this.openScreenAddNewAdmin.Size = new System.Drawing.Size(168, 22);
-            this.openScreenAddNewAdmin.Text = "Add New Admin";
-            this.openScreenAddNewAdmin.Click += new System.EventHandler(this.openScreenAddNewAdmin_Click);
+            openScreenAddNewAdmin.Name = "openScreenAddNewAdmin";
+            openScreenAddNewAdmin.Size = new Size(224, 26);
+            openScreenAddNewAdmin.Text = "Add New Admin";
+            openScreenAddNewAdmin.Click += openScreenAddNewAdmin_Click;
             // 
             // seeUserRegistersToolStripMenuItem
             // 
-            this.seeUserRegistersToolStripMenuItem.Name = "seeUserRegistersToolStripMenuItem";
-            this.seeUserRegistersToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.seeUserRegistersToolStripMenuItem.Text = "See User Registers";
-            this.seeUserRegistersToolStripMenuItem.Click += new System.EventHandler(this.seeUserRegistersToolStripMenuItem_Click);
+            seeUserRegistersToolStripMenuItem.Name = "seeUserRegistersToolStripMenuItem";
+            seeUserRegistersToolStripMenuItem.Size = new Size(224, 26);
+            seeUserRegistersToolStripMenuItem.Text = "See User Registers";
+            seeUserRegistersToolStripMenuItem.Click += seeUserRegistersToolStripMenuItem_Click;
             // 
             // Admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 351);
-            this.Controls.Add(this.menuStrip1);
-            this.IsMdiContainer = true;
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Admin";
-            this.Text = "BowValleyCinemaRoom - Admin";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Admin_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(758, 468);
+            Controls.Add(menuStrip1);
+            Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            IsMdiContainer = true;
+            MainMenuStrip = menuStrip1;
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "Admin";
+            Text = "BowValleyCinemaRoom - Admin";
+            WindowState = FormWindowState.Maximized;
+            Load += Admin_Load;
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

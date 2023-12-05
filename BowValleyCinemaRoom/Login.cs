@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -28,6 +30,8 @@ namespace BowValleyCinemaRoom
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+
+            playSound();
             string email = textEmail.Text;
             string password = textPassword.Text;
 
@@ -53,7 +57,8 @@ namespace BowValleyCinemaRoom
                     try
                     {
                         validateFields();
-                    }catch(Exception ex)
+                    }
+                    catch (Exception ex)
                     {
                         MessageBox.Show($"Error: {ex.Message}");
                         return;
@@ -63,14 +68,17 @@ namespace BowValleyCinemaRoom
                     //MessageBox.Show($"{dtable.Rows.Count}, {dtable.Rows[0][0].ToString()}, {dtable.Rows[0][1].ToString()}, {dtable.Rows[0][2].ToString()}");
                     if (dtable.Rows.Count > 0)
                     {
-                        if (dtable.Rows[0][2].ToString() == "isClient") {
+                        if (dtable.Rows[0][2].ToString() == "isClient")
+                        {
                             this.Hide();
                             screenUser = new User(Int32.Parse(dtable.Rows[0][3].ToString()));
                             screenUser.ShowDialog();
                             textEmail.Clear();
                             textPassword.Clear();
                             this.Show();
-                        } else if (dtable.Rows[0][2].ToString() == "isAdmin"){
+                        }
+                        else if (dtable.Rows[0][2].ToString() == "isAdmin")
+                        {
                             this.Hide();
                             screenAdmin.ShowDialog();
                             textEmail.Clear();
@@ -78,13 +86,15 @@ namespace BowValleyCinemaRoom
                             this.Show();
                         }
                     }
-                    else {
+                    else
+                    {
                         //MessageBox.Show("We did not find users with these credentials");
                         throw new ErrorHandler.InvalidCredentialsException();
                     }
 
                 }
-                catch (Exception ex) {
+                catch (Exception ex)
+                {
                     MessageBox.Show($"Error: {ex.Message}");
                 }
             }
@@ -92,7 +102,7 @@ namespace BowValleyCinemaRoom
 
         private void validateFields()
         {
-            if (textEmail.Text == "" )
+            if (textEmail.Text == "")
             {
                 throw new ErrorHandler.EmptyFieldException("Email");
             }
@@ -102,9 +112,29 @@ namespace BowValleyCinemaRoom
             }
         }
 
-        private void labelUser_Click(object sender, EventArgs e)
+        public void playSound()
         {
-
+            bool found = false;
+            try
+            {
+                using (RegistryKey key = Registry.CurrentUser.OpenSubKey(@"AppEvents\Schemes\Apps\.Default\Notification.Default\.Current"))
+                {
+                    if (key != null)
+                    {
+                        Object o = key.GetValue(null); // pass null to get (Default)
+                        if (o != null)
+                        {
+                            SoundPlayer theSound = new SoundPlayer((String)o);
+                            theSound.Play();
+                            found = true;
+                        }
+                    }
+                }
+            }
+            catch
+            { }
+            if (!found)
+                SystemSounds.Beep.Play();
         }
     }
 }

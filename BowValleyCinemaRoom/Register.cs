@@ -1,4 +1,7 @@
 ﻿
+using Microsoft.Win32;
+using System.Media;
+
 namespace BowValleyCinemaRoom
 {
     public partial class Register : Form
@@ -10,6 +13,7 @@ namespace BowValleyCinemaRoom
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
+            playSound();
             string firstName = textFirstName.Text;
             string lastName = textLastName.Text;
             string address = textAddress.Text;
@@ -35,6 +39,30 @@ namespace BowValleyCinemaRoom
         private void Register_Load(object sender, EventArgs e)
         {
 
+        }
+        public void playSound()
+        {
+            bool found = false;
+            try
+            {
+                using (RegistryKey key = Registry.CurrentUser.OpenSubKey(@"AppEvents\Schemes\Apps\.Default\Notification.Default\.Current"))
+                {
+                    if (key != null)
+                    {
+                        Object o = key.GetValue(null); // pass null to get (Default)
+                        if (o != null)
+                        {
+                            SoundPlayer theSound = new SoundPlayer((String)o);
+                            theSound.Play();
+                            found = true;
+                        }
+                    }
+                }
+            }
+            catch
+            { }
+            if (!found)
+                SystemSounds.Beep.Play();
         }
     }
 }

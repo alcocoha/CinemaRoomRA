@@ -40,56 +40,57 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(89, 70);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(80, 56);
             label1.Name = "label1";
-            label1.Size = new Size(0, 25);
+            label1.Size = new Size(0, 20);
             label1.TabIndex = 0;
             // 
             // menuStrip1
             // 
+            menuStrip1.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
             menuStrip1.ImageScalingSize = new Size(24, 24);
             menuStrip1.Items.AddRange(new ToolStripItem[] { moviesToolStripMenuItem, profileToolStripMenuItem, aboutToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Padding = new Padding(9, 3, 0, 3);
-            menuStrip1.Size = new Size(880, 35);
+            menuStrip1.Padding = new Padding(8, 2, 0, 2);
+            menuStrip1.Size = new Size(792, 28);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
             // moviesToolStripMenuItem
             // 
             moviesToolStripMenuItem.Name = "moviesToolStripMenuItem";
-            moviesToolStripMenuItem.Size = new Size(85, 29);
+            moviesToolStripMenuItem.Size = new Size(77, 24);
             moviesToolStripMenuItem.Text = "Movies";
             moviesToolStripMenuItem.Click += moviesToolStripMenuItem_Click;
             // 
             // profileToolStripMenuItem
             // 
             profileToolStripMenuItem.Name = "profileToolStripMenuItem";
-            profileToolStripMenuItem.Size = new Size(78, 29);
+            profileToolStripMenuItem.Size = new Size(68, 24);
             profileToolStripMenuItem.Text = "Profile";
             profileToolStripMenuItem.Click += profileToolStripMenuItem_Click;
             // 
             // aboutToolStripMenuItem
             // 
             aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            aboutToolStripMenuItem.Size = new Size(78, 29);
+            aboutToolStripMenuItem.Size = new Size(68, 24);
             aboutToolStripMenuItem.Text = "About";
             aboutToolStripMenuItem.Click += aboutToolStripMenuItem_Click;
             // 
             // User
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ScrollBar;
+            BackColor = SystemColors.ActiveCaption;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(880, 663);
+            ClientSize = new Size(792, 530);
             Controls.Add(label1);
             Controls.Add(menuStrip1);
+            Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
             IsMdiContainer = true;
             MainMenuStrip = menuStrip1;
-            Margin = new Padding(4, 5, 4, 5);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "User";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Bow Valley Cinema Room - Client";

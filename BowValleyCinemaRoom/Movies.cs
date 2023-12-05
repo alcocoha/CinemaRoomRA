@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -80,6 +82,7 @@ namespace BowValleyCinemaRoom
 
         private void button2_Click(object sender, EventArgs e)
         {
+            playSound();
             DateTime startDate = DateTime.Now;
             string startDateFormat = startDate.ToString("MM/dd/yyyy");
             DateTime endDate = startDate.AddDays(10);
@@ -87,6 +90,31 @@ namespace BowValleyCinemaRoom
 
             MessageBox.Show($"Rent init {startDateFormat} and ends {endDateFormat}");
 
+        }
+
+        public void playSound()
+        {
+            bool found = false;
+            try
+            {
+                using (RegistryKey key = Registry.CurrentUser.OpenSubKey(@"AppEvents\Schemes\Apps\.Default\Notification.Default\.Current"))
+                {
+                    if (key != null)
+                    {
+                        Object o = key.GetValue(null); // pass null to get (Default)
+                        if (o != null)
+                        {
+                            SoundPlayer theSound = new SoundPlayer((String)o);
+                            theSound.Play();
+                            found = true;
+                        }
+                    }
+                }
+            }
+            catch
+            { }
+            if (!found)
+                SystemSounds.Beep.Play();
         }
     }
 }
