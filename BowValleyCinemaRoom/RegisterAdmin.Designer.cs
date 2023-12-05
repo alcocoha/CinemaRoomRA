@@ -28,371 +28,281 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboYear = new System.Windows.Forms.ComboBox();
-            this.comboDay = new System.Windows.Forms.ComboBox();
-            this.comboMonth = new System.Windows.Forms.ComboBox();
-            this.btnRegisterAdmin = new System.Windows.Forms.Button();
-            this.textConfirmPassword = new System.Windows.Forms.TextBox();
-            this.labelConfirmPassword = new System.Windows.Forms.Label();
-            this.textPassword = new System.Windows.Forms.TextBox();
-            this.labelPassword = new System.Windows.Forms.Label();
-            this.textEmail = new System.Windows.Forms.TextBox();
-            this.labelEmail = new System.Windows.Forms.Label();
-            this.textPhone = new System.Windows.Forms.TextBox();
-            this.labelPhone = new System.Windows.Forms.Label();
-            this.labelBirthday = new System.Windows.Forms.Label();
-            this.textAddress = new System.Windows.Forms.TextBox();
-            this.labelAddress = new System.Windows.Forms.Label();
-            this.textLastName = new System.Windows.Forms.TextBox();
-            this.labelLastName = new System.Windows.Forms.Label();
-            this.textFirstName = new System.Windows.Forms.TextBox();
-            this.labelFirstName = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            comboYear = new ComboBox();
+            comboDay = new ComboBox();
+            comboMonth = new ComboBox();
+            btnRegisterAdmin = new Button();
+            textConfirmPassword = new TextBox();
+            labelConfirmPassword = new Label();
+            textPassword = new TextBox();
+            labelPassword = new Label();
+            textEmail = new TextBox();
+            labelEmail = new Label();
+            textPhone = new TextBox();
+            labelPhone = new Label();
+            labelBirthday = new Label();
+            textAddress = new TextBox();
+            labelAddress = new Label();
+            textLastName = new TextBox();
+            labelLastName = new Label();
+            textFirstName = new TextBox();
+            labelFirstName = new Label();
+            lbl_titleNewAdmin = new Label();
+            SuspendLayout();
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(272, 140);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(27, 13);
-            this.label4.TabIndex = 45;
-            this.label4.Text = "Year";
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(387, 232);
+            label4.Name = "label4";
+            label4.Size = new Size(35, 19);
+            label4.TabIndex = 45;
+            label4.Text = "Year";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(213, 140);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(26, 13);
-            this.label3.TabIndex = 44;
-            this.label3.Text = "Day";
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(310, 232);
+            label3.Name = "label3";
+            label3.Size = new Size(33, 19);
+            label3.TabIndex = 44;
+            label3.Text = "Day";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(152, 140);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 13);
-            this.label2.TabIndex = 43;
-            this.label2.Text = "Month";
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(233, 232);
+            label2.Name = "label2";
+            label2.Size = new Size(51, 19);
+            label2.TabIndex = 43;
+            label2.Text = "Month";
             // 
             // comboYear
             // 
-            this.comboYear.FormattingEnabled = true;
-            this.comboYear.Items.AddRange(new object[] {
-            "1950",
-            "1951",
-            "1952",
-            "1953",
-            "1954",
-            "1955",
-            "1956",
-            "1957",
-            "1958",
-            "1959",
-            "1960",
-            "1961",
-            "1962",
-            "1963",
-            "1964",
-            "1965",
-            "1966",
-            "1967",
-            "1968",
-            "1969",
-            "1970",
-            "1971",
-            "1972",
-            "1973",
-            "1974",
-            "1975",
-            "1976",
-            "1977",
-            "1978",
-            "1979",
-            "1980",
-            "1981",
-            "1982",
-            "1983",
-            "1984",
-            "1985",
-            "1986",
-            "1987",
-            "1988",
-            "1989",
-            "1990",
-            "1991",
-            "1992",
-            "1993",
-            "1994",
-            "1995",
-            "1996",
-            "1997",
-            "1998",
-            "1999",
-            "2000",
-            "2001",
-            "2002",
-            "2003",
-            "2004",
-            "2005",
-            "2006",
-            "2007",
-            "2008",
-            "2009",
-            "2010",
-            "2011",
-            "2012",
-            "2013",
-            "2014",
-            "2015",
-            "2016",
-            "2017",
-            "2018",
-            "2019",
-            "2020",
-            "2021",
-            "2022",
-            "2023"});
-            this.comboYear.Location = new System.Drawing.Point(272, 154);
-            this.comboYear.Name = "comboYear";
-            this.comboYear.Size = new System.Drawing.Size(53, 23);
-            this.comboYear.TabIndex = 42;
+            comboYear.FormattingEnabled = true;
+            comboYear.Items.AddRange(new object[] { "1950", "1951", "1952", "1953", "1954", "1955", "1956", "1957", "1958", "1959", "1960", "1961", "1962", "1963", "1964", "1965", "1966", "1967", "1968", "1969", "1970", "1971", "1972", "1973", "1974", "1975", "1976", "1977", "1978", "1979", "1980", "1981", "1982", "1983", "1984", "1985", "1986", "1987", "1988", "1989", "1990", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023" });
+            comboYear.Location = new Point(385, 255);
+            comboYear.Margin = new Padding(3, 4, 3, 4);
+            comboYear.Name = "comboYear";
+            comboYear.Size = new Size(67, 28);
+            comboYear.TabIndex = 42;
             // 
             // comboDay
             // 
-            this.comboDay.FormattingEnabled = true;
-            this.comboDay.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.comboDay.Location = new System.Drawing.Point(213, 154);
-            this.comboDay.Name = "comboDay";
-            this.comboDay.Size = new System.Drawing.Size(53, 23);
-            this.comboDay.TabIndex = 41;
+            comboDay.FormattingEnabled = true;
+            comboDay.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" });
+            comboDay.Location = new Point(308, 255);
+            comboDay.Margin = new Padding(3, 4, 3, 4);
+            comboDay.Name = "comboDay";
+            comboDay.Size = new Size(67, 28);
+            comboDay.TabIndex = 41;
             // 
             // comboMonth
             // 
-            this.comboMonth.FormattingEnabled = true;
-            this.comboMonth.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.comboMonth.Location = new System.Drawing.Point(154, 154);
-            this.comboMonth.Name = "comboMonth";
-            this.comboMonth.Size = new System.Drawing.Size(53, 23);
-            this.comboMonth.TabIndex = 40;
+            comboMonth.FormattingEnabled = true;
+            comboMonth.Items.AddRange(new object[] { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" });
+            comboMonth.Location = new Point(233, 255);
+            comboMonth.Margin = new Padding(3, 4, 3, 4);
+            comboMonth.Name = "comboMonth";
+            comboMonth.Size = new Size(67, 28);
+            comboMonth.TabIndex = 40;
             // 
             // btnRegisterAdmin
             // 
-            this.btnRegisterAdmin.Location = new System.Drawing.Point(183, 365);
-            this.btnRegisterAdmin.Name = "btnRegisterAdmin";
-            this.btnRegisterAdmin.Size = new System.Drawing.Size(142, 23);
-            this.btnRegisterAdmin.TabIndex = 39;
-            this.btnRegisterAdmin.Text = "Register new admin";
-            this.btnRegisterAdmin.UseVisualStyleBackColor = true;
-            this.btnRegisterAdmin.Click += new System.EventHandler(this.btnRegisterAdmin_Click);
+            btnRegisterAdmin.BackColor = SystemColors.GradientActiveCaption;
+            btnRegisterAdmin.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRegisterAdmin.Location = new Point(299, 537);
+            btnRegisterAdmin.Margin = new Padding(3, 4, 3, 4);
+            btnRegisterAdmin.Name = "btnRegisterAdmin";
+            btnRegisterAdmin.Size = new Size(153, 42);
+            btnRegisterAdmin.TabIndex = 39;
+            btnRegisterAdmin.Text = "Register";
+            btnRegisterAdmin.UseVisualStyleBackColor = false;
+            btnRegisterAdmin.Click += btnRegisterAdmin_Click;
             // 
             // textConfirmPassword
             // 
-            this.textConfirmPassword.Location = new System.Drawing.Point(154, 319);
-            this.textConfirmPassword.Name = "textConfirmPassword";
-            this.textConfirmPassword.PasswordChar = '*';
-            this.textConfirmPassword.Size = new System.Drawing.Size(171, 23);
-            this.textConfirmPassword.TabIndex = 38;
+            textConfirmPassword.Location = new Point(233, 475);
+            textConfirmPassword.Margin = new Padding(3, 4, 3, 4);
+            textConfirmPassword.Name = "textConfirmPassword";
+            textConfirmPassword.PasswordChar = '*';
+            textConfirmPassword.Size = new Size(219, 26);
+            textConfirmPassword.TabIndex = 38;
             // 
             // labelConfirmPassword
             // 
-            this.labelConfirmPassword.AutoSize = true;
-            this.labelConfirmPassword.Location = new System.Drawing.Point(44, 322);
-            this.labelConfirmPassword.Name = "labelConfirmPassword";
-            this.labelConfirmPassword.Size = new System.Drawing.Size(104, 15);
-            this.labelConfirmPassword.TabIndex = 37;
-            this.labelConfirmPassword.Text = "Confirm Password";
+            labelConfirmPassword.AutoSize = true;
+            labelConfirmPassword.Location = new Point(87, 478);
+            labelConfirmPassword.Name = "labelConfirmPassword";
+            labelConfirmPassword.Size = new Size(140, 20);
+            labelConfirmPassword.TabIndex = 37;
+            labelConfirmPassword.Text = "Confirm Password";
             // 
             // textPassword
             // 
-            this.textPassword.Location = new System.Drawing.Point(154, 278);
-            this.textPassword.Name = "textPassword";
-            this.textPassword.PasswordChar = '*';
-            this.textPassword.Size = new System.Drawing.Size(171, 23);
-            this.textPassword.TabIndex = 36;
+            textPassword.Location = new Point(233, 421);
+            textPassword.Margin = new Padding(3, 4, 3, 4);
+            textPassword.Name = "textPassword";
+            textPassword.PasswordChar = '*';
+            textPassword.Size = new Size(219, 26);
+            textPassword.TabIndex = 36;
             // 
             // labelPassword
             // 
-            this.labelPassword.AutoSize = true;
-            this.labelPassword.Location = new System.Drawing.Point(91, 281);
-            this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(57, 15);
-            this.labelPassword.TabIndex = 35;
-            this.labelPassword.Text = "Password";
+            labelPassword.AutoSize = true;
+            labelPassword.Location = new Point(148, 424);
+            labelPassword.Name = "labelPassword";
+            labelPassword.Size = new Size(79, 20);
+            labelPassword.TabIndex = 35;
+            labelPassword.Text = "Password";
             // 
             // textEmail
             // 
-            this.textEmail.Location = new System.Drawing.Point(154, 238);
-            this.textEmail.Name = "textEmail";
-            this.textEmail.Size = new System.Drawing.Size(171, 23);
-            this.textEmail.TabIndex = 34;
+            textEmail.Location = new Point(233, 367);
+            textEmail.Margin = new Padding(3, 4, 3, 4);
+            textEmail.Name = "textEmail";
+            textEmail.Size = new Size(219, 26);
+            textEmail.TabIndex = 34;
             // 
             // labelEmail
             // 
-            this.labelEmail.AutoSize = true;
-            this.labelEmail.Location = new System.Drawing.Point(112, 241);
-            this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(36, 15);
-            this.labelEmail.TabIndex = 33;
-            this.labelEmail.Text = "Email";
+            labelEmail.AutoSize = true;
+            labelEmail.Location = new Point(181, 370);
+            labelEmail.Name = "labelEmail";
+            labelEmail.Size = new Size(46, 20);
+            labelEmail.TabIndex = 33;
+            labelEmail.Text = "Email";
             // 
             // textPhone
             // 
-            this.textPhone.Location = new System.Drawing.Point(154, 197);
-            this.textPhone.Name = "textPhone";
-            this.textPhone.Size = new System.Drawing.Size(171, 23);
-            this.textPhone.TabIndex = 32;
+            textPhone.Location = new Point(233, 313);
+            textPhone.Margin = new Padding(3, 4, 3, 4);
+            textPhone.Name = "textPhone";
+            textPhone.Size = new Size(219, 26);
+            textPhone.TabIndex = 32;
             // 
             // labelPhone
             // 
-            this.labelPhone.AutoSize = true;
-            this.labelPhone.Location = new System.Drawing.Point(107, 200);
-            this.labelPhone.Name = "labelPhone";
-            this.labelPhone.Size = new System.Drawing.Size(41, 15);
-            this.labelPhone.TabIndex = 31;
-            this.labelPhone.Text = "Phone";
+            labelPhone.AutoSize = true;
+            labelPhone.Location = new Point(171, 319);
+            labelPhone.Name = "labelPhone";
+            labelPhone.Size = new Size(56, 20);
+            labelPhone.TabIndex = 31;
+            labelPhone.Text = "Phone";
             // 
             // labelBirthday
             // 
-            this.labelBirthday.AutoSize = true;
-            this.labelBirthday.Location = new System.Drawing.Point(97, 157);
-            this.labelBirthday.Name = "labelBirthday";
-            this.labelBirthday.Size = new System.Drawing.Size(51, 15);
-            this.labelBirthday.TabIndex = 30;
-            this.labelBirthday.Text = "Birthday";
+            labelBirthday.AutoSize = true;
+            labelBirthday.Location = new Point(159, 258);
+            labelBirthday.Name = "labelBirthday";
+            labelBirthday.Size = new Size(68, 20);
+            labelBirthday.TabIndex = 30;
+            labelBirthday.Text = "Birthday";
             // 
             // textAddress
             // 
-            this.textAddress.Location = new System.Drawing.Point(154, 111);
-            this.textAddress.Name = "textAddress";
-            this.textAddress.Size = new System.Drawing.Size(171, 23);
-            this.textAddress.TabIndex = 29;
-            this.textAddress.TextChanged += new System.EventHandler(this.textAddress_TextChanged);
+            textAddress.Location = new Point(233, 198);
+            textAddress.Margin = new Padding(3, 4, 3, 4);
+            textAddress.Name = "textAddress";
+            textAddress.Size = new Size(219, 26);
+            textAddress.TabIndex = 29;
+            textAddress.TextChanged += textAddress_TextChanged;
             // 
             // labelAddress
             // 
-            this.labelAddress.AutoSize = true;
-            this.labelAddress.Location = new System.Drawing.Point(99, 114);
-            this.labelAddress.Name = "labelAddress";
-            this.labelAddress.Size = new System.Drawing.Size(49, 15);
-            this.labelAddress.TabIndex = 28;
-            this.labelAddress.Text = "Address";
+            labelAddress.AutoSize = true;
+            labelAddress.Location = new Point(160, 201);
+            labelAddress.Name = "labelAddress";
+            labelAddress.Size = new Size(67, 20);
+            labelAddress.TabIndex = 28;
+            labelAddress.Text = "Address";
             // 
             // textLastName
             // 
-            this.textLastName.Location = new System.Drawing.Point(154, 68);
-            this.textLastName.Name = "textLastName";
-            this.textLastName.Size = new System.Drawing.Size(171, 23);
-            this.textLastName.TabIndex = 27;
+            textLastName.Location = new Point(233, 141);
+            textLastName.Margin = new Padding(3, 4, 3, 4);
+            textLastName.Name = "textLastName";
+            textLastName.Size = new Size(219, 26);
+            textLastName.TabIndex = 27;
             // 
             // labelLastName
             // 
-            this.labelLastName.AutoSize = true;
-            this.labelLastName.Location = new System.Drawing.Point(85, 71);
-            this.labelLastName.Name = "labelLastName";
-            this.labelLastName.Size = new System.Drawing.Size(63, 15);
-            this.labelLastName.TabIndex = 26;
-            this.labelLastName.Text = "Last Name";
+            labelLastName.AutoSize = true;
+            labelLastName.Location = new Point(142, 144);
+            labelLastName.Name = "labelLastName";
+            labelLastName.Size = new Size(85, 20);
+            labelLastName.TabIndex = 26;
+            labelLastName.Text = "Last Name";
             // 
             // textFirstName
             // 
-            this.textFirstName.Location = new System.Drawing.Point(154, 27);
-            this.textFirstName.Name = "textFirstName";
-            this.textFirstName.Size = new System.Drawing.Size(171, 23);
-            this.textFirstName.TabIndex = 25;
+            textFirstName.Location = new Point(233, 86);
+            textFirstName.Margin = new Padding(3, 4, 3, 4);
+            textFirstName.Name = "textFirstName";
+            textFirstName.Size = new Size(219, 26);
+            textFirstName.TabIndex = 25;
             // 
             // labelFirstName
             // 
-            this.labelFirstName.AutoSize = true;
-            this.labelFirstName.Location = new System.Drawing.Point(84, 30);
-            this.labelFirstName.Name = "labelFirstName";
-            this.labelFirstName.Size = new System.Drawing.Size(64, 15);
-            this.labelFirstName.TabIndex = 24;
-            this.labelFirstName.Text = "First Name";
+            labelFirstName.AutoSize = true;
+            labelFirstName.Location = new Point(144, 86);
+            labelFirstName.Name = "labelFirstName";
+            labelFirstName.Size = new Size(83, 20);
+            labelFirstName.TabIndex = 24;
+            labelFirstName.Text = "First Name";
+            // 
+            // lbl_titleNewAdmin
+            // 
+            lbl_titleNewAdmin.AutoSize = true;
+            lbl_titleNewAdmin.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl_titleNewAdmin.Location = new Point(32, 30);
+            lbl_titleNewAdmin.Name = "lbl_titleNewAdmin";
+            lbl_titleNewAdmin.Size = new Size(243, 23);
+            lbl_titleNewAdmin.TabIndex = 46;
+            lbl_titleNewAdmin.Text = "New Admin Registration";
             // 
             // RegisterAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(446, 450);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboYear);
-            this.Controls.Add(this.comboDay);
-            this.Controls.Add(this.comboMonth);
-            this.Controls.Add(this.btnRegisterAdmin);
-            this.Controls.Add(this.textConfirmPassword);
-            this.Controls.Add(this.labelConfirmPassword);
-            this.Controls.Add(this.textPassword);
-            this.Controls.Add(this.labelPassword);
-            this.Controls.Add(this.textEmail);
-            this.Controls.Add(this.labelEmail);
-            this.Controls.Add(this.textPhone);
-            this.Controls.Add(this.labelPhone);
-            this.Controls.Add(this.labelBirthday);
-            this.Controls.Add(this.textAddress);
-            this.Controls.Add(this.labelAddress);
-            this.Controls.Add(this.textLastName);
-            this.Controls.Add(this.labelLastName);
-            this.Controls.Add(this.textFirstName);
-            this.Controls.Add(this.labelFirstName);
-            this.Name = "RegisterAdmin";
-            this.Text = "Add new admin";
-            this.Load += new System.EventHandler(this.RegisterAdmin_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(574, 600);
+            Controls.Add(lbl_titleNewAdmin);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(comboYear);
+            Controls.Add(comboDay);
+            Controls.Add(comboMonth);
+            Controls.Add(btnRegisterAdmin);
+            Controls.Add(textConfirmPassword);
+            Controls.Add(labelConfirmPassword);
+            Controls.Add(textPassword);
+            Controls.Add(labelPassword);
+            Controls.Add(textEmail);
+            Controls.Add(labelEmail);
+            Controls.Add(textPhone);
+            Controls.Add(labelPhone);
+            Controls.Add(labelBirthday);
+            Controls.Add(textAddress);
+            Controls.Add(labelAddress);
+            Controls.Add(textLastName);
+            Controls.Add(labelLastName);
+            Controls.Add(textFirstName);
+            Controls.Add(labelFirstName);
+            Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "RegisterAdmin";
+            Text = "Add new admin";
+            Load += RegisterAdmin_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -419,5 +329,6 @@
         private Label labelLastName;
         private TextBox textFirstName;
         private Label labelFirstName;
+        private Label lbl_titleNewAdmin;
     }
 }

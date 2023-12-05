@@ -28,112 +28,158 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.labelEmail = new System.Windows.Forms.Label();
-            this.labelPassword = new System.Windows.Forms.Label();
-            this.textEmail = new System.Windows.Forms.TextBox();
-            this.textPassword = new System.Windows.Forms.TextBox();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.labelDescription = new System.Windows.Forms.Label();
-            this.linkRegister = new System.Windows.Forms.LinkLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            pictureBox1 = new PictureBox();
+            labelEmail = new Label();
+            labelPassword = new Label();
+            textEmail = new TextBox();
+            textPassword = new TextBox();
+            btnLogin = new Button();
+            labelDescription = new Label();
+            linkRegister = new LinkLabel();
+            lbl_nameYara = new Label();
+            lbl_nameJorge = new Label();
+            lbl_nameAbigail = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::BowValleyCinemaRoom.Properties.Resources.logo_bowcinema;
-            this.pictureBox1.Location = new System.Drawing.Point(268, 27);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(353, 247);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = Properties.Resources.logo_bowcinema;
+            pictureBox1.Location = new Point(45, 66);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(353, 247);
+            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // labelEmail
             // 
-            this.labelEmail.AutoSize = true;
-            this.labelEmail.Location = new System.Drawing.Point(47, 127);
-            this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(36, 15);
-            this.labelEmail.TabIndex = 1;
-            this.labelEmail.Text = "Email";
-            this.labelEmail.Click += new System.EventHandler(this.labelUser_Click);
+            labelEmail.AutoSize = true;
+            labelEmail.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            labelEmail.Location = new Point(505, 115);
+            labelEmail.Name = "labelEmail";
+            labelEmail.Size = new Size(52, 21);
+            labelEmail.TabIndex = 1;
+            labelEmail.Text = "Email";
             // 
             // labelPassword
             // 
-            this.labelPassword.AutoSize = true;
-            this.labelPassword.Location = new System.Drawing.Point(26, 167);
-            this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(57, 15);
-            this.labelPassword.TabIndex = 2;
-            this.labelPassword.Text = "Password";
+            labelPassword.AutoSize = true;
+            labelPassword.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            labelPassword.Location = new Point(468, 171);
+            labelPassword.Name = "labelPassword";
+            labelPassword.Size = new Size(88, 21);
+            labelPassword.TabIndex = 2;
+            labelPassword.Text = "Password";
             // 
             // textEmail
             // 
-            this.textEmail.Location = new System.Drawing.Point(89, 124);
-            this.textEmail.Name = "textEmail";
-            this.textEmail.Size = new System.Drawing.Size(150, 23);
-            this.textEmail.TabIndex = 3;
+            textEmail.Location = new Point(570, 113);
+            textEmail.Margin = new Padding(3, 4, 3, 4);
+            textEmail.Name = "textEmail";
+            textEmail.Size = new Size(192, 26);
+            textEmail.TabIndex = 3;
             // 
             // textPassword
             // 
-            this.textPassword.Location = new System.Drawing.Point(88, 164);
-            this.textPassword.Name = "textPassword";
-            this.textPassword.PasswordChar = '*';
-            this.textPassword.Size = new System.Drawing.Size(151, 23);
-            this.textPassword.TabIndex = 4;
+            textPassword.Location = new Point(569, 167);
+            textPassword.Margin = new Padding(3, 4, 3, 4);
+            textPassword.Name = "textPassword";
+            textPassword.PasswordChar = '*';
+            textPassword.Size = new Size(193, 26);
+            textPassword.TabIndex = 4;
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(164, 202);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 23);
-            this.btnLogin.TabIndex = 5;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            btnLogin.BackColor = SystemColors.GradientActiveCaption;
+            btnLogin.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnLogin.Location = new Point(645, 217);
+            btnLogin.Margin = new Padding(3, 4, 3, 4);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(118, 42);
+            btnLogin.TabIndex = 5;
+            btnLogin.Text = "Login";
+            btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
             // 
             // labelDescription
             // 
-            this.labelDescription.AutoSize = true;
-            this.labelDescription.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelDescription.Location = new System.Drawing.Point(479, 307);
-            this.labelDescription.Name = "labelDescription";
-            this.labelDescription.Size = new System.Drawing.Size(142, 12);
-            this.labelDescription.TabIndex = 6;
-            this.labelDescription.Text = "This is the final project for OOP";
+            labelDescription.AutoSize = true;
+            labelDescription.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            labelDescription.Location = new Point(372, 377);
+            labelDescription.Name = "labelDescription";
+            labelDescription.Size = new Size(391, 21);
+            labelDescription.TabIndex = 6;
+            labelDescription.Text = "Final Project: Trio Triumph Movie Rental System";
             // 
             // linkRegister
             // 
-            this.linkRegister.AutoSize = true;
-            this.linkRegister.Location = new System.Drawing.Point(190, 259);
-            this.linkRegister.Name = "linkRegister";
-            this.linkRegister.Size = new System.Drawing.Size(49, 15);
-            this.linkRegister.TabIndex = 7;
-            this.linkRegister.TabStop = true;
-            this.linkRegister.Text = "Register";
-            this.linkRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkRegister_LinkClicked);
+            linkRegister.AutoSize = true;
+            linkRegister.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            linkRegister.Location = new Point(678, 293);
+            linkRegister.Name = "linkRegister";
+            linkRegister.Size = new Size(75, 21);
+            linkRegister.TabIndex = 7;
+            linkRegister.TabStop = true;
+            linkRegister.Text = "Register";
+            linkRegister.LinkClicked += linkRegister_LinkClicked;
+            // 
+            // lbl_nameYara
+            // 
+            lbl_nameYara.AutoSize = true;
+            lbl_nameYara.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_nameYara.Location = new Point(627, 410);
+            lbl_nameYara.Name = "lbl_nameYara";
+            lbl_nameYara.Size = new Size(136, 21);
+            lbl_nameYara.TabIndex = 8;
+            lbl_nameYara.Text = "Yara Pysmenko";
+            // 
+            // lbl_nameJorge
+            // 
+            lbl_nameJorge.AutoSize = true;
+            lbl_nameJorge.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_nameJorge.Location = new Point(500, 443);
+            lbl_nameJorge.Name = "lbl_nameJorge";
+            lbl_nameJorge.Size = new Size(263, 21);
+            lbl_nameJorge.TabIndex = 9;
+            lbl_nameJorge.Text = "Jorge Alberto Hurtado Ortega";
+            // 
+            // lbl_nameAbigail
+            // 
+            lbl_nameAbigail.AutoSize = true;
+            lbl_nameAbigail.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_nameAbigail.Location = new Point(655, 476);
+            lbl_nameAbigail.Name = "lbl_nameAbigail";
+            lbl_nameAbigail.Size = new Size(108, 21);
+            lbl_nameAbigail.TabIndex = 10;
+            lbl_nameAbigail.Text = "Abigail Cruz";
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(633, 395);
-            this.Controls.Add(this.linkRegister);
-            this.Controls.Add(this.labelDescription);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.textPassword);
-            this.Controls.Add(this.textEmail);
-            this.Controls.Add(this.labelPassword);
-            this.Controls.Add(this.labelEmail);
-            this.Controls.Add(this.pictureBox1);
-            this.Name = "Login";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(813, 549);
+            Controls.Add(lbl_nameAbigail);
+            Controls.Add(lbl_nameJorge);
+            Controls.Add(lbl_nameYara);
+            Controls.Add(linkRegister);
+            Controls.Add(labelDescription);
+            Controls.Add(btnLogin);
+            Controls.Add(textPassword);
+            Controls.Add(textEmail);
+            Controls.Add(labelPassword);
+            Controls.Add(labelEmail);
+            Controls.Add(pictureBox1);
+            Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "Login";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Login";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -146,5 +192,8 @@
         private Button btnLogin;
         private Label labelDescription;
         private LinkLabel linkRegister;
+        private Label lbl_nameYara;
+        private Label lbl_nameJorge;
+        private Label lbl_nameAbigail;
     }
 }
