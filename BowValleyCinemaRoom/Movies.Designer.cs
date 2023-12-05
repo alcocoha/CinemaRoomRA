@@ -198,6 +198,7 @@
             this.Controls.Add(this.dgMovies);
             this.Name = "Movies";
             this.Text = "Movies";
+            this.Load += new System.EventHandler(this.Movies_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgMovies)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.posterPicture)).EndInit();
             this.ResumeLayout(false);
