@@ -59,6 +59,7 @@
             this.btnRegisterMovie.TabIndex = 61;
             this.btnRegisterMovie.Text = "Add Movie";
             this.btnRegisterMovie.UseVisualStyleBackColor = false;
+            this.btnRegisterMovie.Click += new System.EventHandler(this.btnRegisterMovie_Click_1);
             // 
             // textCopiesInStore
             // 

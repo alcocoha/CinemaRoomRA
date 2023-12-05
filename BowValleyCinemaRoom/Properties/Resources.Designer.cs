@@ -103,6 +103,16 @@ namespace BowValleyCinemaRoom.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap jurassic {
+            get {
+                object obj = ResourceManager.GetObject("jurassic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Katie {
             get {
                 object obj = ResourceManager.GetObject("Katie", resourceCulture);

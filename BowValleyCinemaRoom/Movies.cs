@@ -66,7 +66,7 @@ namespace BowValleyCinemaRoom
 
         private void dgMovies_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            MessageBox.Show("click");
         }
 
         private void button3_Click(object sender, EventArgs e)
