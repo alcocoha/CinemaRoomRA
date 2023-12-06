@@ -121,7 +121,10 @@
   <data name="AnthonyHopkins" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AnthonyHopkins.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="batmanPoster" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="backToTheFuture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backToTheFuture.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="batman" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\batmanPoster.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BradPitt" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -159,6 +162,12 @@
   </data>
   <data name="PenélopeCruz" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PenélopeCruz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="residentEvil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\residentEvil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="theSantaClause" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\theSantaClause.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TomCruise" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TomCruise.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

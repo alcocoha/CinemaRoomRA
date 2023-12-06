@@ -41,6 +41,7 @@
             this.btnRent = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.posterPicture = new System.Windows.Forms.PictureBox();
+            this.btnTrailer = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgMovies)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.posterPicture)).BeginInit();
             this.SuspendLayout();
@@ -52,8 +53,10 @@
             this.dgMovies.Name = "dgMovies";
             this.dgMovies.RowHeadersWidth = 51;
             this.dgMovies.RowTemplate.Height = 25;
-            this.dgMovies.Size = new System.Drawing.Size(460, 304);
+            this.dgMovies.Size = new System.Drawing.Size(460, 358);
             this.dgMovies.TabIndex = 0;
+            this.dgMovies.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgMovies.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMovies_CellContentClick);
             // 
             // label1
             // 
@@ -83,6 +86,7 @@
             this.btnSearchAMovie.TabIndex = 3;
             this.btnSearchAMovie.Text = "Search";
             this.btnSearchAMovie.UseVisualStyleBackColor = false;
+            this.btnSearchAMovie.Click += new System.EventHandler(this.btnSearchAMovie_Click);
             // 
             // listMovies
             // 
@@ -124,6 +128,7 @@
             this.button1.TabIndex = 7;
             this.button1.Text = "Clear";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // labelTotalMovies
             // 
@@ -157,6 +162,7 @@
             this.btnRent.TabIndex = 10;
             this.btnRent.Text = "Rent Movies";
             this.btnRent.UseVisualStyleBackColor = false;
+            this.btnRent.Click += new System.EventHandler(this.btnRent_Click);
             // 
             // btnReset
             // 
@@ -168,21 +174,36 @@
             this.btnReset.TabIndex = 11;
             this.btnReset.Text = "Reset list";
             this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // posterPicture
             // 
             this.posterPicture.Location = new System.Drawing.Point(478, 116);
             this.posterPicture.Name = "posterPicture";
             this.posterPicture.Size = new System.Drawing.Size(225, 304);
+            this.posterPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.posterPicture.TabIndex = 12;
             this.posterPicture.TabStop = false;
+            // 
+            // btnTrailer
+            // 
+            this.btnTrailer.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnTrailer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnTrailer.Location = new System.Drawing.Point(478, 426);
+            this.btnTrailer.Name = "btnTrailer";
+            this.btnTrailer.Size = new System.Drawing.Size(225, 50);
+            this.btnTrailer.TabIndex = 13;
+            this.btnTrailer.Text = "Trailer";
+            this.btnTrailer.UseVisualStyleBackColor = false;
+            this.btnTrailer.Click += new System.EventHandler(this.btnTrailer_Click);
             // 
             // Movies
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(982, 501);
+            this.ClientSize = new System.Drawing.Size(982, 526);
+            this.Controls.Add(this.btnTrailer);
             this.Controls.Add(this.posterPicture);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnRent);
@@ -221,5 +242,6 @@
         private Button btnRent;
         private Button btnReset;
         private PictureBox posterPicture;
+        private Button btnTrailer;
     }
 }
