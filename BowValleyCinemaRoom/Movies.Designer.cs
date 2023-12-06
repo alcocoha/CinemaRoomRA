@@ -28,184 +28,203 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dgMovies = new DataGridView();
-            label1 = new Label();
-            textMovie = new TextBox();
-            btnSearchAMovie = new Button();
-            listMovies = new ListBox();
-            label2 = new Label();
-            listPrices = new ListBox();
-            button1 = new Button();
-            labelTotalMovies = new Label();
-            labelTotalPrice = new Label();
-            btnRent = new Button();
-            btnReset = new Button();
-            ((System.ComponentModel.ISupportInitialize)dgMovies).BeginInit();
-            SuspendLayout();
+            this.dgMovies = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textMovie = new System.Windows.Forms.TextBox();
+            this.btnSearchAMovie = new System.Windows.Forms.Button();
+            this.listMovies = new System.Windows.Forms.ListBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.listPrices = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.labelTotalMovies = new System.Windows.Forms.Label();
+            this.labelTotalPrice = new System.Windows.Forms.Label();
+            this.btnRent = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.posterPicture = new System.Windows.Forms.PictureBox();
+            this.btnTrailer = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgMovies)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.posterPicture)).BeginInit();
+            this.SuspendLayout();
             // 
             // dgMovies
             // 
-            dgMovies.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgMovies.Location = new Point(14, 155);
-            dgMovies.Margin = new Padding(3, 4, 3, 4);
-            dgMovies.Name = "dgMovies";
-            dgMovies.RowHeadersWidth = 51;
-            dgMovies.RowTemplate.Height = 25;
-            dgMovies.Size = new Size(526, 405);
-            dgMovies.TabIndex = 0;
-            dgMovies.CellClick += dataGridView1_CellContentClick;
-            dgMovies.CellContentClick += dgMovies_CellContentClick;
+            this.dgMovies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgMovies.Location = new System.Drawing.Point(12, 116);
+            this.dgMovies.Name = "dgMovies";
+            this.dgMovies.RowHeadersWidth = 51;
+            this.dgMovies.RowTemplate.Height = 25;
+            this.dgMovies.Size = new System.Drawing.Size(460, 358);
+            this.dgMovies.TabIndex = 0;
+            this.dgMovies.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgMovies.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgMovies_CellContentClick);
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(14, 25);
-            label1.Name = "label1";
-            label1.Size = new Size(175, 23);
-            label1.TabIndex = 1;
-            label1.Text = "Movies Selection";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(12, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(136, 19);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Movies Selection";
             // 
             // textMovie
             // 
-            textMovie.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            textMovie.Location = new Point(14, 96);
-            textMovie.Margin = new Padding(3, 4, 3, 4);
-            textMovie.Name = "textMovie";
-            textMovie.Size = new Size(237, 26);
-            textMovie.TabIndex = 2;
+            this.textMovie.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textMovie.Location = new System.Drawing.Point(12, 72);
+            this.textMovie.Name = "textMovie";
+            this.textMovie.Size = new System.Drawing.Size(208, 22);
+            this.textMovie.TabIndex = 2;
             // 
             // btnSearchAMovie
             // 
-            btnSearchAMovie.BackColor = SystemColors.GradientActiveCaption;
-            btnSearchAMovie.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            btnSearchAMovie.Location = new Point(262, 90);
-            btnSearchAMovie.Margin = new Padding(3, 4, 3, 4);
-            btnSearchAMovie.Name = "btnSearchAMovie";
-            btnSearchAMovie.Size = new Size(132, 37);
-            btnSearchAMovie.TabIndex = 3;
-            btnSearchAMovie.Text = "Search";
-            btnSearchAMovie.UseVisualStyleBackColor = false;
-            btnSearchAMovie.Click += btnSearchAMovie_Click;
+            this.btnSearchAMovie.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnSearchAMovie.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSearchAMovie.Location = new System.Drawing.Point(229, 68);
+            this.btnSearchAMovie.Name = "btnSearchAMovie";
+            this.btnSearchAMovie.Size = new System.Drawing.Size(116, 28);
+            this.btnSearchAMovie.TabIndex = 3;
+            this.btnSearchAMovie.Text = "Search";
+            this.btnSearchAMovie.UseVisualStyleBackColor = false;
+            this.btnSearchAMovie.Click += new System.EventHandler(this.btnSearchAMovie_Click);
             // 
             // listMovies
             // 
-            listMovies.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            listMovies.FormattingEnabled = true;
-            listMovies.ItemHeight = 20;
-            listMovies.Location = new Point(559, 155);
-            listMovies.Margin = new Padding(3, 4, 3, 4);
-            listMovies.Name = "listMovies";
-            listMovies.Size = new Size(201, 224);
-            listMovies.TabIndex = 4;
+            this.listMovies.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.listMovies.FormattingEnabled = true;
+            this.listMovies.ItemHeight = 17;
+            this.listMovies.Location = new System.Drawing.Point(709, 116);
+            this.listMovies.Name = "listMovies";
+            this.listMovies.Size = new System.Drawing.Size(176, 157);
+            this.listMovies.TabIndex = 4;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(559, 119);
-            label2.Name = "label2";
-            label2.Size = new Size(134, 18);
-            label2.TabIndex = 5;
-            label2.Text = "Movies Selected:";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(709, 89);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(107, 16);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Movies Selected:";
             // 
             // listPrices
             // 
-            listPrices.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            listPrices.FormattingEnabled = true;
-            listPrices.ItemHeight = 20;
-            listPrices.Location = new Point(767, 155);
-            listPrices.Margin = new Padding(3, 4, 3, 4);
-            listPrices.Name = "listPrices";
-            listPrices.Size = new Size(75, 224);
-            listPrices.TabIndex = 6;
+            this.listPrices.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.listPrices.FormattingEnabled = true;
+            this.listPrices.ItemHeight = 17;
+            this.listPrices.Location = new System.Drawing.Point(891, 116);
+            this.listPrices.Name = "listPrices";
+            this.listPrices.Size = new System.Drawing.Size(66, 157);
+            this.listPrices.TabIndex = 6;
             // 
             // button1
             // 
-            button1.BackColor = SystemColors.GradientActiveCaption;
-            button1.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(401, 90);
-            button1.Margin = new Padding(3, 4, 3, 4);
-            button1.Name = "button1";
-            button1.Size = new Size(87, 37);
-            button1.TabIndex = 7;
-            button1.Text = "Clear";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            this.button1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(351, 68);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(76, 28);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Clear";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // labelTotalMovies
             // 
-            labelTotalMovies.AutoSize = true;
-            labelTotalMovies.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            labelTotalMovies.Location = new Point(559, 396);
-            labelTotalMovies.Name = "labelTotalMovies";
-            labelTotalMovies.Size = new Size(114, 20);
-            labelTotalMovies.TabIndex = 8;
-            labelTotalMovies.Text = "Total movies: 0";
+            this.labelTotalMovies.AutoSize = true;
+            this.labelTotalMovies.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelTotalMovies.Location = new System.Drawing.Point(709, 297);
+            this.labelTotalMovies.Name = "labelTotalMovies";
+            this.labelTotalMovies.Size = new System.Drawing.Size(96, 17);
+            this.labelTotalMovies.TabIndex = 8;
+            this.labelTotalMovies.Text = "Total movies: 0";
             // 
             // labelTotalPrice
             // 
-            labelTotalPrice.AutoSize = true;
-            labelTotalPrice.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            labelTotalPrice.Location = new Point(785, 396);
-            labelTotalPrice.Name = "labelTotalPrice";
-            labelTotalPrice.RightToLeft = RightToLeft.No;
-            labelTotalPrice.Size = new Size(75, 20);
-            labelTotalPrice.TabIndex = 9;
-            labelTotalPrice.Text = "0.00 CAD";
-            labelTotalPrice.TextAlign = ContentAlignment.TopRight;
+            this.labelTotalPrice.AutoSize = true;
+            this.labelTotalPrice.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelTotalPrice.Location = new System.Drawing.Point(907, 297);
+            this.labelTotalPrice.Name = "labelTotalPrice";
+            this.labelTotalPrice.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelTotalPrice.Size = new System.Drawing.Size(62, 17);
+            this.labelTotalPrice.TabIndex = 9;
+            this.labelTotalPrice.Text = "0.00 CAD";
+            this.labelTotalPrice.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // btnRent
             // 
-            btnRent.BackColor = SystemColors.GradientActiveCaption;
-            btnRent.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnRent.Location = new Point(559, 493);
-            btnRent.Margin = new Padding(3, 4, 3, 4);
-            btnRent.Name = "btnRent";
-            btnRent.Size = new Size(283, 67);
-            btnRent.TabIndex = 10;
-            btnRent.Text = "Rent Movies";
-            btnRent.UseVisualStyleBackColor = false;
-            btnRent.Click += button2_Click;
+            this.btnRent.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnRent.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRent.Location = new System.Drawing.Point(709, 370);
+            this.btnRent.Name = "btnRent";
+            this.btnRent.Size = new System.Drawing.Size(248, 50);
+            this.btnRent.TabIndex = 10;
+            this.btnRent.Text = "Rent Movies";
+            this.btnRent.UseVisualStyleBackColor = false;
+            this.btnRent.Click += new System.EventHandler(this.btnRent_Click);
             // 
             // btnReset
             // 
-            btnReset.BackColor = SystemColors.GradientActiveCaption;
-            btnReset.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            btnReset.Location = new Point(690, 437);
-            btnReset.Margin = new Padding(3, 4, 3, 4);
-            btnReset.Name = "btnReset";
-            btnReset.Size = new Size(153, 37);
-            btnReset.TabIndex = 11;
-            btnReset.Text = "Reset list";
-            btnReset.UseVisualStyleBackColor = false;
-            btnReset.Click += button3_Click;
+            this.btnReset.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnReset.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnReset.Location = new System.Drawing.Point(824, 328);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(134, 28);
+            this.btnReset.TabIndex = 11;
+            this.btnReset.Text = "Reset list";
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // posterPicture
+            // 
+            this.posterPicture.Location = new System.Drawing.Point(478, 116);
+            this.posterPicture.Name = "posterPicture";
+            this.posterPicture.Size = new System.Drawing.Size(225, 304);
+            this.posterPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.posterPicture.TabIndex = 12;
+            this.posterPicture.TabStop = false;
+            // 
+            // btnTrailer
+            // 
+            this.btnTrailer.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnTrailer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnTrailer.Location = new System.Drawing.Point(478, 426);
+            this.btnTrailer.Name = "btnTrailer";
+            this.btnTrailer.Size = new System.Drawing.Size(225, 50);
+            this.btnTrailer.TabIndex = 13;
+            this.btnTrailer.Text = "Trailer";
+            this.btnTrailer.UseVisualStyleBackColor = false;
+            this.btnTrailer.Click += new System.EventHandler(this.btnTrailer_Click);
             // 
             // Movies
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(869, 636);
-            Controls.Add(btnReset);
-            Controls.Add(btnRent);
-            Controls.Add(labelTotalPrice);
-            Controls.Add(labelTotalMovies);
-            Controls.Add(button1);
-            Controls.Add(listPrices);
-            Controls.Add(label2);
-            Controls.Add(listMovies);
-            Controls.Add(btnSearchAMovie);
-            Controls.Add(textMovie);
-            Controls.Add(label1);
-            Controls.Add(dgMovies);
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "Movies";
-            Text = "Movies";
-            Load += Movies_Load;
-            ((System.ComponentModel.ISupportInitialize)dgMovies).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(982, 526);
+            this.Controls.Add(this.btnTrailer);
+            this.Controls.Add(this.posterPicture);
+            this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.btnRent);
+            this.Controls.Add(this.labelTotalPrice);
+            this.Controls.Add(this.labelTotalMovies);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.listPrices);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.listMovies);
+            this.Controls.Add(this.btnSearchAMovie);
+            this.Controls.Add(this.textMovie);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dgMovies);
+            this.Name = "Movies";
+            this.Text = "Movies";
+            this.Load += new System.EventHandler(this.Movies_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgMovies)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.posterPicture)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -222,5 +241,7 @@
         private Label labelTotalPrice;
         private Button btnRent;
         private Button btnReset;
+        private PictureBox posterPicture;
+        private Button btnTrailer;
     }
 }

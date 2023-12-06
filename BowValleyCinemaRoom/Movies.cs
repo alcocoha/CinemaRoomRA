@@ -18,6 +18,7 @@ namespace BowValleyCinemaRoom
     {
         int totalMovies = 0;
         int totalPrice = 0;
+        string trailer = "";
 
         //string movieId;
         int registerId;
@@ -33,13 +34,20 @@ namespace BowValleyCinemaRoom
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow row = this.dgMovies.Rows[e.RowIndex];
+
             string title = row.Cells["Title"].Value.ToString();
             string price = row.Cells["Price"].Value.ToString();
+            string poster = row.Cells["poster"].Value.ToString();
+            trailer = row.Cells["trailer"].Value.ToString();
             listMovies.Items.Add(title);
             listPrices.Items.Add($"{price} cad");
 
             totalPrice = totalPrice + Int32.Parse(price);
             totalMovies = totalMovies + 1;
+
+            object objImage = Properties.Resources.ResourceManager.GetObject(poster);
+            Image image = (Image)objImage;
+            posterPicture.Image = image;
 
             labelTotalMovies.Text = $"Total movies to rent : {totalMovies}";
             labelTotalPrice.Text = $"{totalPrice}.0 cad";
@@ -66,30 +74,6 @@ namespace BowValleyCinemaRoom
 
         private void dgMovies_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            listPrices.Items.Clear();
-            listMovies.Items.Clear();
-            totalPrice = 0;
-            totalMovies = 0;
-
-            labelTotalMovies.Text = $"Total movies to rent : {totalMovies}";
-            labelTotalPrice.Text = $"0.0 cad";
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            playSound();
-            DateTime startDate = DateTime.Now;
-            string startDateFormat = startDate.ToString("MM/dd/yyyy");
-            DateTime endDate = startDate.AddDays(10);
-            string endDateFormat = endDate.ToString("MM/dd/yyyy");
-
-            MessageBox.Show($"Rent init {startDateFormat} and ends {endDateFormat}");
-
         }
 
         public void playSound()
@@ -115,6 +99,34 @@ namespace BowValleyCinemaRoom
             { }
             if (!found)
                 SystemSounds.Beep.Play();
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            listPrices.Items.Clear();
+            listMovies.Items.Clear();
+            totalPrice = 0;
+            totalMovies = 0;
+
+            labelTotalMovies.Text = $"Total movies to rent : {totalMovies}";
+            labelTotalPrice.Text = $"0.0 cad";
+        }
+
+        private void btnRent_Click(object sender, EventArgs e)
+        {
+            playSound();
+            DateTime startDate = DateTime.Now;
+            string startDateFormat = startDate.ToString("MM/dd/yyyy");
+            DateTime endDate = startDate.AddDays(10);
+            string endDateFormat = endDate.ToString("MM/dd/yyyy");
+
+            MessageBox.Show($"Rent init {startDateFormat} and ends {endDateFormat}");
+        }
+
+        private void btnTrailer_Click(object sender, EventArgs e)
+        {
+            Trailer trailerWindow = new Trailer(trailer);
+            trailerWindow.Show();
         }
     }
 }

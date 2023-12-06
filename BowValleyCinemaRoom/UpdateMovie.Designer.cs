@@ -28,177 +28,227 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textPrice = new TextBox();
-            labelPrice = new Label();
-            comboBoxCategory = new ComboBox();
-            btnUpdateMovie = new Button();
-            textCopiesInStore = new TextBox();
-            labelTotalCopies = new Label();
-            textYear = new TextBox();
-            labelYear = new Label();
-            labelCategory = new Label();
-            textDescription = new TextBox();
-            labelDescription = new Label();
-            textTitle = new TextBox();
-            labelTitle = new Label();
-            label1 = new Label();
-            SuspendLayout();
+            this.textPrice = new System.Windows.Forms.TextBox();
+            this.labelPrice = new System.Windows.Forms.Label();
+            this.comboBoxCategory = new System.Windows.Forms.ComboBox();
+            this.btnUpdateMovie = new System.Windows.Forms.Button();
+            this.textCopiesInStore = new System.Windows.Forms.TextBox();
+            this.labelTotalCopies = new System.Windows.Forms.Label();
+            this.textYear = new System.Windows.Forms.TextBox();
+            this.labelYear = new System.Windows.Forms.Label();
+            this.labelCategory = new System.Windows.Forms.Label();
+            this.textDescription = new System.Windows.Forms.TextBox();
+            this.labelDescription = new System.Windows.Forms.Label();
+            this.textTitle = new System.Windows.Forms.TextBox();
+            this.labelTitle = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textPoster = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textTrailer = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
             // 
             // textPrice
             // 
-            textPrice.Location = new Point(209, 478);
-            textPrice.Margin = new Padding(3, 4, 3, 4);
-            textPrice.Name = "textPrice";
-            textPrice.Size = new Size(219, 26);
-            textPrice.TabIndex = 77;
+            this.textPrice.Location = new System.Drawing.Point(209, 429);
+            this.textPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textPrice.Name = "textPrice";
+            this.textPrice.Size = new System.Drawing.Size(219, 22);
+            this.textPrice.TabIndex = 77;
             // 
             // labelPrice
             // 
-            labelPrice.AutoSize = true;
-            labelPrice.Location = new Point(141, 481);
-            labelPrice.Name = "labelPrice";
-            labelPrice.Size = new Size(46, 20);
-            labelPrice.TabIndex = 76;
-            labelPrice.Text = "Price";
+            this.labelPrice.AutoSize = true;
+            this.labelPrice.Location = new System.Drawing.Point(141, 432);
+            this.labelPrice.Name = "labelPrice";
+            this.labelPrice.Size = new System.Drawing.Size(38, 17);
+            this.labelPrice.TabIndex = 76;
+            this.labelPrice.Text = "Price";
             // 
             // comboBoxCategory
             // 
-            comboBoxCategory.FormattingEnabled = true;
-            comboBoxCategory.Items.AddRange(new object[] { "Action", "Comedy", "Drama", "Fantasy", "Horror", "Mystery", "Romance", "Thriller", "Western" });
-            comboBoxCategory.Location = new Point(209, 309);
-            comboBoxCategory.Margin = new Padding(3, 4, 3, 4);
-            comboBoxCategory.Name = "comboBoxCategory";
-            comboBoxCategory.Size = new Size(219, 28);
-            comboBoxCategory.TabIndex = 75;
+            this.comboBoxCategory.FormattingEnabled = true;
+            this.comboBoxCategory.Items.AddRange(new object[] {
+            "Action",
+            "Comedy",
+            "Drama",
+            "Fantasy",
+            "Horror",
+            "Mystery",
+            "Romance",
+            "Thriller",
+            "Western"});
+            this.comboBoxCategory.Location = new System.Drawing.Point(209, 298);
+            this.comboBoxCategory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.comboBoxCategory.Name = "comboBoxCategory";
+            this.comboBoxCategory.Size = new System.Drawing.Size(219, 25);
+            this.comboBoxCategory.TabIndex = 75;
             // 
             // btnUpdateMovie
             // 
-            btnUpdateMovie.BackColor = SystemColors.GradientActiveCaption;
-            btnUpdateMovie.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnUpdateMovie.Location = new Point(246, 540);
-            btnUpdateMovie.Margin = new Padding(3, 4, 3, 4);
-            btnUpdateMovie.Name = "btnUpdateMovie";
-            btnUpdateMovie.Size = new Size(182, 46);
-            btnUpdateMovie.TabIndex = 74;
-            btnUpdateMovie.Text = "Update";
-            btnUpdateMovie.UseVisualStyleBackColor = false;
-            btnUpdateMovie.Click += btnUpdateMovie_Click;
+            this.btnUpdateMovie.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnUpdateMovie.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnUpdateMovie.Location = new System.Drawing.Point(246, 563);
+            this.btnUpdateMovie.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnUpdateMovie.Name = "btnUpdateMovie";
+            this.btnUpdateMovie.Size = new System.Drawing.Size(182, 46);
+            this.btnUpdateMovie.TabIndex = 74;
+            this.btnUpdateMovie.Text = "Update";
+            this.btnUpdateMovie.UseVisualStyleBackColor = false;
             // 
             // textCopiesInStore
             // 
-            textCopiesInStore.Location = new Point(209, 421);
-            textCopiesInStore.Margin = new Padding(3, 4, 3, 4);
-            textCopiesInStore.Name = "textCopiesInStore";
-            textCopiesInStore.Size = new Size(219, 26);
-            textCopiesInStore.TabIndex = 73;
+            this.textCopiesInStore.Location = new System.Drawing.Point(209, 387);
+            this.textCopiesInStore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textCopiesInStore.Name = "textCopiesInStore";
+            this.textCopiesInStore.Size = new System.Drawing.Size(219, 22);
+            this.textCopiesInStore.TabIndex = 73;
             // 
             // labelTotalCopies
             // 
-            labelTotalCopies.AutoSize = true;
-            labelTotalCopies.Location = new Point(70, 424);
-            labelTotalCopies.Name = "labelTotalCopies";
-            labelTotalCopies.Size = new Size(117, 20);
-            labelTotalCopies.TabIndex = 72;
-            labelTotalCopies.Text = "Copies in Store";
+            this.labelTotalCopies.AutoSize = true;
+            this.labelTotalCopies.Location = new System.Drawing.Point(70, 390);
+            this.labelTotalCopies.Name = "labelTotalCopies";
+            this.labelTotalCopies.Size = new System.Drawing.Size(97, 17);
+            this.labelTotalCopies.TabIndex = 72;
+            this.labelTotalCopies.Text = "Copies in Store";
             // 
             // textYear
             // 
-            textYear.Location = new Point(209, 366);
-            textYear.Margin = new Padding(3, 4, 3, 4);
-            textYear.Name = "textYear";
-            textYear.Size = new Size(219, 26);
-            textYear.TabIndex = 71;
+            this.textYear.Location = new System.Drawing.Point(209, 344);
+            this.textYear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textYear.Name = "textYear";
+            this.textYear.Size = new System.Drawing.Size(219, 22);
+            this.textYear.TabIndex = 71;
             // 
             // labelYear
             // 
-            labelYear.AutoSize = true;
-            labelYear.Location = new Point(146, 369);
-            labelYear.Name = "labelYear";
-            labelYear.Size = new Size(41, 20);
-            labelYear.TabIndex = 70;
-            labelYear.Text = "Year";
+            this.labelYear.AutoSize = true;
+            this.labelYear.Location = new System.Drawing.Point(146, 347);
+            this.labelYear.Name = "labelYear";
+            this.labelYear.Size = new System.Drawing.Size(35, 17);
+            this.labelYear.TabIndex = 70;
+            this.labelYear.Text = "Year";
             // 
             // labelCategory
             // 
-            labelCategory.AutoSize = true;
-            labelCategory.Location = new Point(108, 312);
-            labelCategory.Name = "labelCategory";
-            labelCategory.Size = new Size(79, 20);
-            labelCategory.TabIndex = 69;
-            labelCategory.Text = "Category";
+            this.labelCategory.AutoSize = true;
+            this.labelCategory.Location = new System.Drawing.Point(108, 301);
+            this.labelCategory.Name = "labelCategory";
+            this.labelCategory.Size = new System.Drawing.Size(64, 17);
+            this.labelCategory.TabIndex = 69;
+            this.labelCategory.Text = "Category";
             // 
             // textDescription
             // 
-            textDescription.Location = new Point(209, 144);
-            textDescription.Margin = new Padding(3, 4, 3, 4);
-            textDescription.Multiline = true;
-            textDescription.Name = "textDescription";
-            textDescription.Size = new Size(219, 139);
-            textDescription.TabIndex = 68;
+            this.textDescription.Location = new System.Drawing.Point(209, 144);
+            this.textDescription.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textDescription.Multiline = true;
+            this.textDescription.Name = "textDescription";
+            this.textDescription.Size = new System.Drawing.Size(219, 139);
+            this.textDescription.TabIndex = 68;
             // 
             // labelDescription
             // 
-            labelDescription.AutoSize = true;
-            labelDescription.Location = new Point(96, 147);
-            labelDescription.Name = "labelDescription";
-            labelDescription.Size = new Size(91, 20);
-            labelDescription.TabIndex = 67;
-            labelDescription.Text = "Description";
+            this.labelDescription.AutoSize = true;
+            this.labelDescription.Location = new System.Drawing.Point(96, 147);
+            this.labelDescription.Name = "labelDescription";
+            this.labelDescription.Size = new System.Drawing.Size(76, 17);
+            this.labelDescription.TabIndex = 67;
+            this.labelDescription.Text = "Description";
             // 
             // textTitle
             // 
-            textTitle.Location = new Point(209, 86);
-            textTitle.Margin = new Padding(3, 4, 3, 4);
-            textTitle.Name = "textTitle";
-            textTitle.Size = new Size(219, 26);
-            textTitle.TabIndex = 66;
+            this.textTitle.Location = new System.Drawing.Point(209, 86);
+            this.textTitle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textTitle.Name = "textTitle";
+            this.textTitle.Size = new System.Drawing.Size(219, 22);
+            this.textTitle.TabIndex = 66;
             // 
             // labelTitle
             // 
-            labelTitle.AutoSize = true;
-            labelTitle.Location = new Point(152, 89);
-            labelTitle.Name = "labelTitle";
-            labelTitle.Size = new Size(35, 20);
-            labelTitle.TabIndex = 65;
-            labelTitle.Text = "Title";
+            this.labelTitle.AutoSize = true;
+            this.labelTitle.Location = new System.Drawing.Point(152, 89);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(32, 17);
+            this.labelTitle.TabIndex = 65;
+            this.labelTitle.Text = "Title";
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(28, 34);
-            label1.Name = "label1";
-            label1.Size = new Size(218, 23);
-            label1.TabIndex = 78;
-            label1.Text = "Update Movie Details";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(28, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(171, 19);
+            this.label1.TabIndex = 78;
+            this.label1.Text = "Update Movie Details";
+            // 
+            // textPoster
+            // 
+            this.textPoster.Location = new System.Drawing.Point(209, 469);
+            this.textPoster.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textPoster.Name = "textPoster";
+            this.textPoster.Size = new System.Drawing.Size(219, 22);
+            this.textPoster.TabIndex = 80;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(141, 472);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 17);
+            this.label2.TabIndex = 79;
+            this.label2.Text = "Poster";
+            // 
+            // textTrailer
+            // 
+            this.textTrailer.Location = new System.Drawing.Point(209, 510);
+            this.textTrailer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textTrailer.Name = "textTrailer";
+            this.textTrailer.Size = new System.Drawing.Size(219, 22);
+            this.textTrailer.TabIndex = 82;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(141, 513);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(43, 17);
+            this.label3.TabIndex = 81;
+            this.label3.Text = "Trailer";
             // 
             // UpdateMovie
             // 
-            AutoScaleDimensions = new SizeF(9F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(520, 622);
-            Controls.Add(label1);
-            Controls.Add(textPrice);
-            Controls.Add(labelPrice);
-            Controls.Add(comboBoxCategory);
-            Controls.Add(btnUpdateMovie);
-            Controls.Add(textCopiesInStore);
-            Controls.Add(labelTotalCopies);
-            Controls.Add(textYear);
-            Controls.Add(labelYear);
-            Controls.Add(labelCategory);
-            Controls.Add(textDescription);
-            Controls.Add(labelDescription);
-            Controls.Add(textTitle);
-            Controls.Add(labelTitle);
-            Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "UpdateMovie";
-            Text = "UpdateMovie";
-            Load += UpdateMovie_Load;
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(520, 660);
+            this.Controls.Add(this.textTrailer);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textPoster);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textPrice);
+            this.Controls.Add(this.labelPrice);
+            this.Controls.Add(this.comboBoxCategory);
+            this.Controls.Add(this.btnUpdateMovie);
+            this.Controls.Add(this.textCopiesInStore);
+            this.Controls.Add(this.labelTotalCopies);
+            this.Controls.Add(this.textYear);
+            this.Controls.Add(this.labelYear);
+            this.Controls.Add(this.labelCategory);
+            this.Controls.Add(this.textDescription);
+            this.Controls.Add(this.labelDescription);
+            this.Controls.Add(this.textTitle);
+            this.Controls.Add(this.labelTitle);
+            this.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "UpdateMovie";
+            this.Text = "UpdateMovie";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -217,5 +267,9 @@
         private TextBox textTitle;
         private Label labelTitle;
         private Label label1;
+        private TextBox textPoster;
+        private Label label2;
+        private TextBox textTrailer;
+        private Label label3;
     }
 }

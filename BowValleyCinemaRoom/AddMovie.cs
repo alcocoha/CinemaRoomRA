@@ -45,12 +45,14 @@ namespace BowValleyCinemaRoom
             string year = textYear.Text;
             int totalCopies = Int32.Parse(textCopiesInStore.Text);
             int price = Int32.Parse(textPrice.Text);
+            string poster = textPoster.Text;
+            string trailer = textTrailer.Text;
 
             MovieQueries movieQueries = new MovieQueries();
 
 
 
-            var data = movieQueries.AddMovie(title, category, description, year, totalCopies, price);
+            var data = movieQueries.AddMovie(title, category, description, year, totalCopies, price, poster, trailer);
 
             MessageBox.Show(data.Item2);
 
@@ -62,6 +64,8 @@ namespace BowValleyCinemaRoom
                 textYear.Clear();
                 textCopiesInStore.Clear();
                 textPrice.Clear();
+                textPoster.Clear();
+                textTrailer.Clear();
             }
         }
         private void validateFields()
@@ -90,6 +94,14 @@ namespace BowValleyCinemaRoom
             {
                 throw new ErrorHandler.EmptyFieldException("Price");
             }
+            if (textPoster.Text == "")
+            {
+                throw new ErrorHandler.EmptyFieldException("Poster");
+            }
+            if (textTrailer.Text == "")
+            {
+                throw new ErrorHandler.EmptyFieldException("Trailer");
+            }
         }
 
         public void playSound()
@@ -115,6 +127,50 @@ namespace BowValleyCinemaRoom
             { }
             if (!found)
                 SystemSounds.Beep.Play();
+        }
+
+        private void btnRegisterMovie_Click_1(object sender, EventArgs e)
+        {
+            playSound();
+
+            try
+            {
+                validateFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+                return;
+            }
+
+            string title = textTitle.Text;
+            string category = comboBoxCategory.SelectedItem.ToString();
+            string description = textDescription.Text;
+            string year = textYear.Text;
+            int totalCopies = Int32.Parse(textCopiesInStore.Text);
+            int price = Int32.Parse(textPrice.Text);
+            string poster = textPoster.Text;
+            string trailer = textTrailer.Text;
+
+            MovieQueries movieQueries = new MovieQueries();
+
+
+
+            var data = movieQueries.AddMovie(title, category, description, year, totalCopies, price, poster, trailer);
+
+            MessageBox.Show(data.Item2);
+
+            if (data.Item1.Equals("success"))
+            {
+                textTitle.Clear();
+                textDescription.Clear();
+                comboBoxCategory.SelectedIndex = -1;
+                textYear.Clear();
+                textCopiesInStore.Clear();
+                textPrice.Clear();
+                textPoster.Clear();
+                textTrailer.Clear();
+            }
         }
     }
 }
